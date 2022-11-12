@@ -1,0 +1,378 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navigation section css  */
+body{
+    margin: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(77, 73, 73);
+    position: sticky;
+    top: 0px;
+}
+.left , .right{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+
+}
+.signin{
+    background-color: #f44336;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgb(126, 119, 119);
+    box-shadow: 2px 2px 3px rgb(192, 181, 181);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes flexible{
+    0%{
+        transform: scale(0.85);
+    }
+    25%{
+        transform: scale(0.95);
+    }
+    50%{
+        transform: scale(1.10);
+    }
+    75%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(0.85);
+    }
+}
+
+.favs{
+    animation-name: flexible;
+    animation-timing-function:ease-in-out ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#web-title{
+    margin-top: 5px;
+    font-weight: 900;
+    letter-spacing: 2px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fd2415;
+    text-shadow: 3px 3px 3px #fff,
+    -2px 1px 7px rgb(53, 24, 24);
+}
+
+.fa-solid{
+    padding: 10px;
+    margin: 0px 15px 0px;
+    box-sizing: border-box;
+    font-size:20px;
+    cursor: pointer;
+}
+.fa-solid:hover{
+    box-sizing: border-box;
+    background-color: rgba(43, 35, 35 , 0.26);
+    border-radius: 50%;
+    padding: 10px;
+    color: #f44336;
+    transition: 0.3s;
+}
+
+
+/* body css  */
+
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url('./assets/masai2.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.upper-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    top: 80px;
+}
+.upper-sec h2 , .upper-sec h5{
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.ready{
+    background: red;
+    padding:0px  5px;
+    border-radius: 3px;
+}
+input{
+    outline: none;
+}
+.form-field{
+    color: black;
+}
+.form-field > input {
+    width:15rem ;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(116, 113, 113);
+    padding-left: 25px;
+    margin-left: 20px;
+}
+.middle-sec{
+    background-color: rgba(255, 255, 255,0.8);
+    padding: 25px;
+    border-radius: 10px;
+}
+.course-search-btn{
+    color: #fff;
+    background-color: #dd1c0e;
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -60px;
+
+}
+button:hover{
+    background: #b80f03;
+    transition: 1s;
+}
+
+
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor:hand;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition:1s;
+}
+
+
+/* header 2 section of description  */
+.header-two{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.left-desc{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(46, 44, 44);
+}
+.left-desc-heading{
+    border-bottom: 1px solid rgb(70, 68, 68);
+}
+
+.text-color{
+    color: #fd2415;
+}
+
+
+.right-disc{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.logo-container{
+    padding: 5px 15px;
+}
+
+/* third section of Ui  */
+
+.header-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgb(215, 235, 245);
+    padding-bottom: 40px;
+}
+.header-three h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.experience-img{
+    width: 24%;
+    height: 45%;
+}
+.experience-img > a > img {
+    width: 260px;
+    height: 185px;
+    border-radius: 10px;
+}
+.exprience-container {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/* 3 dot slide option css  */
+.career-option{
+    position: absolute;
+    left: -22vw;
+    top: 0;
+    height: 100vh;
+    width: 22vw;
+    background-color: #fff;
+    z-index: 4;
+    border-right: 4px solid rgb(234, 240, 207);
+    transition: 1s;
+}
+.top-career{
+    color: #fa3224;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    cursor: pointer;
+    /* flex: 5; */
+}
+.list i{
+    color: grey;
+}
+.list h3{
+    font-weight: 400;
+    color: #f44336;
+}
+.list:hover{
+    background-color: rgb(216, 218, 144);
+}
+
+
+/* fourth section css  */
+
+.skill-text-img img{
+    width: 400px;
+    height: 180px;
+    display: inline-block;
+    filter: contrast(0.8) brightness(0.5) grayscale(1);
+    z-index: 1;
+}
+.skill-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: #fff;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+}
+.skill-text-img{
+    position: relative;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-color: red;
+    margin-right: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.skill-text{
+    position: absolute;
+    bottom:8px;
+    left: 14px;
+    font-size: 20px;
+    z-index: 1;
+}
+.text-span{
+    background-color: red;
+    padding: 3px;
+}
+.header-four-heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.header-four{
+    margin: auto;
+    background-color: #faf6dc;
+    text-align: center;
+    margin-top: 30px;
+    padding: 80px 0px ;
+    z-index: 1;
+}
+
+/* section 5 related css goes here  */
+
+.header-five{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+.tree-data-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.tree-data-img img{
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+}
+.growing-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.growing-text p{
+    font-size: 15px;
+    color: rgb(193, 179, 179);
+}
